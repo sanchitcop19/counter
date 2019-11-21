@@ -23,7 +23,8 @@
                 return;
             }
             const count = document.getElementById('#count');
-            count.innerHTML = document.cookie.split('=')[1];
+            const partial = document.cookie.split('=')[1];
+            count.innerHTML = partial.split(';')[0];
         }
     </script>
     <script src="assets/js/jquery.min.js"></script>

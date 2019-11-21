@@ -7,5 +7,5 @@ document.onkeydown = function(evt) {
     else if (evt.keyCode == '40'){
         count.innerHTML = String(parseInt(count.innerHTML) - 1);
     }
-    document.cookie = "count=" + count.innerHTML;
+    document.cookie = "count=" + count.innerHTML + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 }
