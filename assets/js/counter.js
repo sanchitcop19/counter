@@ -7,5 +7,5 @@ document.onkeydown = function(evt) {
     else if (evt.keyCode == '40'){
         count.innerHTML = String(parseInt(count.innerHTML) - 1);
     }
-    
+    document.cookie = "count=" + count;
 }
